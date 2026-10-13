@@ -1,300 +1,535 @@
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .container{
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
   max-width: 1440px;
+// Define a propriedade CSS 'margin' para os elementos selecionados.
   margin: 0 auto;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 0 8px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 // BG HOME
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .bg-home{
+// Define a propriedade CSS 'position' para os elementos selecionados.
   position: relative;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .bg-home::before{
+// Define a propriedade CSS 'content' para os elementos selecionados.
   content: '';
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: block;
+// Define a propriedade CSS 'position' para os elementos selecionados.
   position: absolute;
+// Define a propriedade CSS 'background-image' para os elementos selecionados.
   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+// Define a propriedade CSS 'left' para os elementos selecionados.
   left: 0;
+// Define a propriedade CSS 'top' para os elementos selecionados.
   top: 0;
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Define a propriedade CSS 'height' para os elementos selecionados.
   height: 100%;
+// Define a propriedade CSS 'z-index' para os elementos selecionados.
   z-index: -1;
+// Define a propriedade CSS 'background-size' para os elementos selecionados.
   background-size: cover;
+// Define a propriedade CSS 'background-repeat' para os elementos selecionados.
   background-repeat: no-repeat;
+// Define a propriedade CSS 'background-position' para os elementos selecionados.
   background-position: 50% 0;
+// Define a propriedade CSS 'opacity' para os elementos selecionados.
   opacity: 0.9;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 // ---------------------------
 
 // HERO -----------
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .hero{
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Define a propriedade CSS 'min-height' para os elementos selecionados.
   min-height: 80vh;
 
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
   flex-direction: column;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 14px;
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   h1{
+// Define a propriedade CSS 'text-align' para os elementos selecionados.
     text-align: center;
+// Define a propriedade CSS 'line-height' para os elementos selecionados.
     line-height: 150%;
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
     max-width: 940px;
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
     font-size: 46px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   p{
+// Define a propriedade CSS 'text-align' para os elementos selecionados.
     text-align: center;
+// Define a propriedade CSS 'margin' para os elementos selecionados.
     margin:14px 0;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .button-contact{
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 14px 28px;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $red-normal;
+// Define a propriedade CSS 'border' para os elementos selecionados.
   border: 0;
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
   font-size: 18px;
+// Define a propriedade CSS 'font-weight' para os elementos selecionados.
   font-weight: 600;
+// Define a propriedade CSS 'margin' para os elementos selecionados.
   margin: 14px 0;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .button-contact:hover{
+// Define a propriedade CSS 'animation' para os elementos selecionados.
   animation: scaleButton 0.8s alternate infinite;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Define as etapas da animação nomeada nesta regra.
 @keyframes scaleButton {
+// Marca uma etapa inicial ou final da animação.
   from{
+// Define a propriedade CSS 'transform' para os elementos selecionados.
     transform: scale(1);
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Marca uma etapa inicial ou final da animação.
   to{
+// Define a propriedade CSS 'transform' para os elementos selecionados.
     transform: scale(1.07);
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 768px){
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .hero{
+// Define a propriedade CSS 'min-height' para os elementos selecionados.
     min-height: 60vh;
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
     h1{
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
       font-size: 34px;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
       padding: 0 14px;
+// Define a propriedade CSS 'width' para os elementos selecionados.
       width: 100%;
+// Fecha o bloco de estilos que foi aberto acima.
     }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
     p{
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
       font-size: 14px;
+// Fecha o bloco de estilos que foi aberto acima.
     }
     
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 480px){
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .hero h1{
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
     font-size: 24px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 // ------------------------------
 
 // About --------------
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .about{
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $primary-normal;
+// Define a propriedade CSS 'overflow' para os elementos selecionados.
   overflow: hidden;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .about-content {
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'gap' para os elementos selecionados.
   gap: 14px;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 34px 14px 64px 14px;
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   img{
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
     max-width: 570px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .about-content div{
+// Define a propriedade CSS 'flex' para os elementos selecionados.
   flex:1;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .about-description{
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   h2{
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
     font-size: 38px;
+// Define a propriedade CSS 'margin-bottom' para os elementos selecionados.
     margin-bottom: 24px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   p{
+// Define a propriedade CSS 'margin-bottom' para os elementos selecionados.
     margin-bottom: 14px;
+// Define a propriedade CSS 'line-height' para os elementos selecionados.
     line-height: 150%;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 768px) {
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .about-content{
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
     flex-direction: column;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 // ---------------------------------
 
 // SERVICES
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .services{
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $white-normal;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $black-normal;
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
   flex-direction: column;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 54px 14px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .services-content h2{
+// Define a propriedade CSS 'text-transform' para os elementos selecionados.
   text-transform: uppercase;
+// Define a propriedade CSS 'text-align' para os elementos selecionados.
   text-align: center;
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
   font-size: 38px;
+// Define a propriedade CSS 'margin-bottom' para os elementos selecionados.
   margin-bottom: 14px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .services-content p{
+// Define a propriedade CSS 'line-height' para os elementos selecionados.
   line-height: 150%;
+// Define a propriedade CSS 'margin-bottom' para os elementos selecionados.
   margin-bottom: 14px;
+// Define a propriedade CSS 'text-align' para os elementos selecionados.
   text-align: center;
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
   max-width: 780px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .haircuts{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'gap' para os elementos selecionados.
   gap: 16px;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 0 44px 34px 44px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .haircut{
+// Define a propriedade CSS 'flex' para os elementos selecionados.
   flex:1;
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
   flex-direction: column;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $white-normal;
+// Define a propriedade CSS 'border-radius' para os elementos selecionados.
   border-radius: 8px;
+// Define a propriedade CSS 'box-shadow' para os elementos selecionados.
   box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
 
+// Define a propriedade CSS 'overflow' para os elementos selecionados.
   overflow: hidden;
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   img{
+// Define a propriedade CSS 'width' para os elementos selecionados.
     width: 100%;
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
     max-width: 354px; 
+// Define a propriedade CSS 'transition' para os elementos selecionados.
     transition: transform 0.2s;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .haircut img:hover{
+// Define a propriedade CSS 'transform' para os elementos selecionados.
   transform: scale(1.2);
+// Define a propriedade CSS 'z-index' para os elementos selecionados.
   z-index: 1;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .haircut-info{
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: space-between;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 14px;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $white-normal;
+// Define a propriedade CSS 'z-index' para os elementos selecionados.
   z-index: 99;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .haircut-info button{
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $red-normal;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 4px 8px;
+// Define a propriedade CSS 'border-radius' para os elementos selecionados.
   border-radius: 4px;
+// Define a propriedade CSS 'border' para os elementos selecionados.
   border:0;
+// Define a propriedade CSS 'cursor' para os elementos selecionados.
   cursor: default;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 768px) {
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .haircuts{
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
     flex-direction: column;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .haircut img{
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
     max-width: 740px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 //----------------------
 
 // Footer
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .footer{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
   flex-direction: column;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 54px 0;
+// Define a propriedade CSS 'gap' para os elementos selecionados.
   gap: 24px;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .footer-icons{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'gap' para os elementos selecionados.
   gap: 8px;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 // -------------------------
 
 // Botao whatsapp
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .btn-whatsapp{
+// Define a propriedade CSS 'position' para os elementos selecionados.
   position: fixed;
+// Define a propriedade CSS 'bottom' para os elementos selecionados.
   bottom: 14px;
+// Define a propriedade CSS 'right' para os elementos selecionados.
   right: 24px;
+// Define a propriedade CSS 'z-index' para os elementos selecionados.
   z-index: 99;
 
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   img{
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
     max-width: 74px;
+// Define a propriedade CSS 'transition' para os elementos selecionados.
     transition: transform 0.4s;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   img:hover{
+// Define a propriedade CSS 'transform' para os elementos selecionados.
     transform: scale(1.1);
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .btn-whatsapp .tooltip-text{
+// Define a propriedade CSS 'visibility' para os elementos selecionados.
   visibility: hidden;
+// Define a propriedade CSS 'position' para os elementos selecionados.
   position: absolute;
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 120px;
+// Define a propriedade CSS 'top' para os elementos selecionados.
   top: 8px;
+// Define a propriedade CSS 'left' para os elementos selecionados.
   left: -144px;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 6px;
+// Define a propriedade CSS 'border-radius' para os elementos selecionados.
   border-radius: 8px;
+// Define a propriedade CSS 'text-align' para os elementos selecionados.
   text-align: center;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $black-normal;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Define a propriedade CSS 'opacity' para os elementos selecionados.
   opacity: 0;
+// Define a propriedade CSS 'transition' para os elementos selecionados.
   transition: opacity 0.4s;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .btn-whatsapp:hover .tooltip-text{
+// Define a propriedade CSS 'visibility' para os elementos selecionados.
   visibility: visible;
+// Define a propriedade CSS 'opacity' para os elementos selecionados.
   opacity: 1;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 768px){
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .btn-whatsapp{
+// Seleciona os elementos HTML que receberão os estilos abaixo.
     img{
+// Define a propriedade CSS 'max-width' para os elementos selecionados.
       max-width: 64px;
+// Fecha o bloco de estilos que foi aberto acima.
     }
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }

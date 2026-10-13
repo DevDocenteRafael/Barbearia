@@ -1,41 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Declara que este documento usa o padrão HTML5. -->
+<!DOCTYPE html>
+<!-- Inicia o documento HTML e informa seu idioma. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+<html lang="pt-br">
+<!-- Define o idioma principal para leitores de tela e mecanismos de busca. -->
+<!-- Inicia a área de metadados e recursos da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+<head>
+  <!-- A seção head reúne metadados, título, fontes e arquivos de estilo. -->
+  <!-- Define UTF-8 para que acentos e outros caracteres sejam exibidos corretamente. -->
+  <!-- Fornece metadados que não aparecem como conteúdo da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <meta charset="UTF-8">
+  <!-- Faz a página ajustar sua largura ao tamanho da tela do dispositivo. -->
+  <!-- Fornece metadados que não aparecem como conteúdo da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fornece um resumo da página para mecanismos de busca e compartilhamentos. -->
+  <!-- Fornece metadados que não aparecem como conteúdo da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <meta name="description" content="Conheça a Dev Barber: serviços de barbearia, horários e agendamento pelo WhatsApp.">
+  <!-- Sugere ao navegador a cor da barra de interface do dispositivo. -->
+  <!-- Fornece metadados que não aparecem como conteúdo da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <meta name="theme-color" content="#06121e">
+
+  <!-- Carrega as regras visuais da biblioteca de animação AOS. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Antecipam a conexão com os servidores que fornecem fontes externas. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- Antecipam a conexão com os servidores que fornecem fontes externas. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Carrega a família tipográfica Sora usada no site. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
+  <!-- Carrega os ícones das redes sociais e do botão de tema. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Aplica os estilos locais da página. -->
+  <!-- Conecta a página a um recurso externo ou folha de estilos. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Carrega a biblioteca que anima elementos durante a rolagem. -->
+  <!-- Carrega ou executa código JavaScript. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-  <title>Dev Barber - Sua barbearia!</title>
+  <!-- Define o texto apresentado na aba do navegador. -->
+  <!-- Define o título que aparece na aba do navegador. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <title>Dev Barber | Barbearia</title>
 </head>
+<!-- Inicia o conteúdo visível e interativo da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
 <body>
+  <!-- O corpo contém todo o conteúdo visível e interativo da página. -->
+  <!-- Atalho de acessibilidade para ir direto ao conteúdo principal. -->
+  <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <!-- HEADER -->
+  <!-- Cabeçalho e chamada principal sobre a imagem de fundo. -->
+  <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <div class="bg-home">
+    <!-- Marca o cabeçalho da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <header>
 
+      <!-- Agrupa os links sociais, o logotipo e as ações do cabeçalho. -->
+      <!-- Agrupa elementos de navegação do cabeçalho. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <nav class="header-content container">
+        <!-- Agrupa os atalhos para as redes sociais da barbearia. -->
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div class="header-icons" data-aos="fade-down">
+          <!-- Link de rede social; substitua # pela URL oficial do perfil. -->
+          <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <a href="#">
+           <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
            <i class="fa-brands fa-instagram fa-2x"></i>   
           </a>
+          <!-- Link de rede social; substitua # pela URL oficial do perfil. -->
+          <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <a href="#">
+            <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
             <i class="fa-brands fa-facebook fa-2x"></i>   
           </a>
+          <!-- Link de rede social; substitua # pela URL oficial do perfil. -->
+          <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <a href="#">
+            <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
             <i class="fa-brands fa-tiktok fa-2x"></i>   
           </a>
         </div>
 
+        <!-- Apresenta a imagem do logotipo no cabeçalho. -->
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+          <!-- O src aponta para o arquivo da imagem e o alt descreve o logotipo. -->
+          <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <img 
             data-aos="flip-up"
             data-aos-delay="300"
@@ -45,7 +102,13 @@
           />
         </div>
 
+        <!-- Botão acessível para alternar entre os temas claro e escuro. -->
+        <!-- Cria um botão que pode ser acionado pela pessoa visitante. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+
+        <!-- Contém o botão de agendamento do cabeçalho. -->
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div data-aos="fade-down">
+          <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <a class="header-button" href="https://api.whatsapp.com/send?phone=5561985565339&text=Quero%20fazer%20um%20agendamento%20hoje!" 
           class="button-contact" 
           target="_blank">
@@ -55,9 +118,16 @@
 
       </nav>
 
-      <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+      <!-- Conteúdo principal; o id permite que o atalho de acessibilidade chegue aqui. -->
+      <!-- Marca o conteúdo principal da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+      <main id="conteudo" class="hero container" data-aos="fade-up" data-aos-delay="400">
+        <!-- Título principal da página, importante para a estrutura semântica. -->
+        <!-- Define o título principal da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
+        <!-- Informa os horários de funcionamento da barbearia. -->
+        <!-- Cria um parágrafo de texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <p>Horário de funcionamento: 09:00 ás 19:00</p>
+        <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <a 
           href="https://api.whatsapp.com/send?phone=5561985565339&text=Quero%20fazer%20um%20agendamento%20hoje!" 
           class="button-contact" 
@@ -71,72 +141,108 @@
 
   </div>
 
-  <!-- ABOUT -->
+  <!-- Seção com apresentação e informações da barbearia. -->
+  <!-- Inicia uma seção temática do conteúdo. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <section class="about">
-    <div class="container about-content">
+    <!-- Centraliza e organiza o texto e a imagem da seção Sobre. -->
+  <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <div class="container about-content">
+      <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <div data-aos="zoom-in" data-aos-delay="100">
+        <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <img 
           src="assets/images.svg" 
           alt="Imagem sobre a barbearia"
         />
       </div>
 
+      <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <div 
         class="about-description"
         data-aos="zoom-out-left" data-aos-delay="250"
       >
+        <!-- Título secundário da seção de apresentação. -->
+        <!-- Define o título de uma seção. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <h2>Sobre</h2>
+        <!-- Cria um parágrafo de texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
+        <!-- Informa os horários de funcionamento da barbearia. -->
+        <!-- Cria um parágrafo de texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
       </div>
 
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- Seção que apresenta os serviços e seus preços. -->
 
+  <!-- Inicia uma seção temática do conteúdo. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <section class="services">
 
+    <!-- Apresenta o título e o texto introdutório dos serviços. -->
+    <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <div class="services-content container">
+      <!-- Define o título de uma seção. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <h2>Serviços</h2>
+      <!-- Cria um parágrafo de texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nihil officiis sed magni in reiciendis cupiditate tenetur cumque voluptatum quibusdam, consectetur impedit quaerat dicta iusto velit atque enim culpa dolore.</p>
     </div>
 
+    <!-- Lista os cartões com os serviços e seus preços. -->
+    <!-- Inicia uma seção temática do conteúdo. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <section class="haircuts">
 
+      <!-- Cada cartão contém uma foto, o nome e o preço de um serviço. -->
+      <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+        <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <img
           src="assets/corte1.png"
           alt="Corte normal"
         />
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div class="haircut-info">
+          <!-- Destaca semanticamente um trecho importante do texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <strong>Corte normal</strong>
+          <!-- Cria um botão que pode ser acionado pela pessoa visitante. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <button>
             R$ 45,00
           </button>
         </div>
       </div>
 
+      <!-- Cada cartão contém uma foto, o nome e o preço de um serviço. -->
+      <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+        <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <img
           src="assets/corte2.png"
           alt="Barba completa"
         />
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div class="haircut-info">
+          <!-- Destaca semanticamente um trecho importante do texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <strong>Barba completa</strong>
+          <!-- Cria um botão que pode ser acionado pela pessoa visitante. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <button>
             R$ 35,00
           </button>
         </div>
       </div>
 
+      <!-- Cada cartão contém uma foto, o nome e o preço de um serviço. -->
+      <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+        <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <img
           src="assets/corte3.png"
           alt="Corte e barba"
         />
+        <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <div class="haircut-info">
+          <!-- Destaca semanticamente um trecho importante do texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <strong>Corte e barba</strong>
+          <!-- Cria um botão que pode ser acionado pela pessoa visitante. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
           <button>
             R$ 85,00
           </button>
@@ -147,52 +253,93 @@
 
   </section>
 
-  <!-- FOOTER -->
+  <!-- Área de localização, redes sociais e informações finais. -->
 
+  <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <div class="services">
+    <!-- Define o título de uma seção. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <h2>Venha conhecer</h2>
   </div>
 
+  <!-- Mapa incorporado para ajudar visitantes a encontrar o local. -->
+  <!-- Incorpora conteúdo externo, neste caso o mapa. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <iframe
   width="100%"
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.426355237055!2d-47.95768032585478!3d-15.83417343481173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3029eaad68b7%3A0xc4985755bc8593cc!2sParkShopping%20Bras%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1778171472764!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+  <!-- Rodapé com redes sociais, logotipo e aviso de direitos autorais. -->
+  <!-- Marca o rodapé da página. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <footer class="footer">
+    <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <div class="footer-icons">
+      <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <a href="#">
+        <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
         <i class="fa-brands fa-instagram fa-2x"></i>   
        </a>
+       <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
        <a href="#">
+         <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
          <i class="fa-brands fa-facebook fa-2x"></i>   
        </a>
+       <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
        <a href="#">
+         <!-- Exibe um ícone da biblioteca Font Awesome. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
          <i class="fa-brands fa-tiktok fa-2x"></i>   
        </a>
     </div>
 
+    <!-- Cria um contêiner para agrupar elementos relacionados. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <div>
+      <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
       <img 
         src="assets/logo.svg" 
         alt="Logo barbearia"
       />
     </div>
 
+    <!-- Cria um parágrafo de texto. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <p>Copyright 2023 | Dev Barbearia - Todos direitos reservados.</p>
   </footer>
 
-  <!-- Button Whatsapp -->
+  <!-- Atalho flutuante para iniciar contato pelo WhatsApp. -->
 
+  <!-- Cria um link ou ação navegável. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
+  <!-- Botão flutuante arrastável que abre as opções de acessibilidade. -->
+  <div class="accessibility-widget">
+    <button class="accessibility-trigger" type="button" aria-label="Abrir opções de acessibilidade" aria-expanded="false" aria-controls="accessibility-panel" title="Arraste para mover; clique para abrir opções">
+      <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+    </button>
+    <div class="accessibility-panel" id="accessibility-panel" role="group" aria-label="Preferências de acessibilidade" hidden>
+      <p class="accessibility-panel-title">Acessibilidade</p>
+      <button class="theme-toggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i><span>Modo claro</span>
+      </button>
+      <div class="font-controls" role="group" aria-label="Tamanho da fonte">
+        <button class="font-control" type="button" data-font-action="decrease" aria-label="Diminuir tamanho da fonte">A−</button>
+        <button class="font-control" type="button" data-font-action="reset" aria-label="Restaurar tamanho padrão da fonte">A</button>
+        <button class="font-control" type="button" data-font-action="increase" aria-label="Aumentar tamanho da fonte">A+</button>
+      </div>
+      <span id="font-status" class="sr-only" aria-live="polite" aria-atomic="true"></span>
+      <span class="drag-hint">Arraste o botão redondo para mover</span>
+    </div>
+  </div>
   <a 
    href="https://api.whatsapp.com/send?phone=5561985565339&text=Quero%20fazer%20um%20site%20hoje!"
    class="btn-whatsapp"
    target="_blank"
    data-aos="zoom-in-up" data-aos-delay="400"
   >
+    <!-- Exibe uma imagem; o atributo alt fornece sua descrição textual. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <img src="assets/whatssapp.svg" alt="Botao whatsapp" />
+    <!-- Agrupa um pequeno trecho de texto ou conteúdo em linha. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
     <span class="tooltip-text">Agende seu horário</span>
   </a>
 
 
+  <!-- Carrega a lógica de alternância de tema e animações. -->
+  <!-- Executa a alternância de tema e configura as animações da página. -->
+  <!-- Carrega ou executa código JavaScript. Os atributos desta tag definem sua aparência, destino ou acessibilidade. -->
   <script src="script.js"></script>
 </body>
 </html>

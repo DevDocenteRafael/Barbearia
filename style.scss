@@ -1,37 +1,66 @@
 *{
+// Define a propriedade CSS 'margin' para os elementos selecionados.
   margin: 0;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 0;
+// Define a propriedade CSS 'box-sizing' para os elementos selecionados.
   box-sizing: border-box;
+// Define a propriedade CSS 'outline' para os elementos selecionados.
   outline: 0;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Importa para este arquivo os estilos definidos no arquivo SCSS indicado.
 @import "partials/colors";
+// Importa para este arquivo os estilos definidos no arquivo SCSS indicado.
 @import "partials/header";
+// Importa para este arquivo os estilos definidos no arquivo SCSS indicado.
 @import "partials/layout";
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 body{
+// Define a propriedade CSS 'font-family' para os elementos selecionados.
   font-family: 'Sora', sans-serif;
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Define a propriedade CSS 'height' para os elementos selecionados.
   height: 100vh;
+// Define a propriedade CSS 'position' para os elementos selecionados.
   position: relative;
 
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $primary-normal;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 button{
+// Define a propriedade CSS 'font-family' para os elementos selecionados.
   font-family: 'Sora', sans-serif;
+// Define a propriedade CSS 'cursor' para os elementos selecionados.
   cursor: pointer;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 svg{
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 img{ 
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 a{
+// Define a propriedade CSS 'cursor' para os elementos selecionados.
   cursor: pointer;
+// Define a propriedade CSS 'text-decoration' para os elementos selecionados.
   text-decoration: none;
+// Fecha o bloco de estilos que foi aberto acima.
 }

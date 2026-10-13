@@ -1,82 +1,148 @@
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 header{
+// Define a propriedade CSS 'width' para os elementos selecionados.
   width: 100%;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-content{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: space-between;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 i{
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-icons{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'gap' para os elementos selecionados.
   gap: 14px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-icons a:hover{
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   i{
+// Define a propriedade CSS 'animation' para os elementos selecionados.
     animation: translateY 0.8s infinite alternate;
+// Define a propriedade CSS 'color' para os elementos selecionados.
     color: $red-light;
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Define as etapas da animação nomeada nesta regra.
 @keyframes translateY {
+// Marca uma etapa inicial ou final da animação.
   from{
+// Define a propriedade CSS 'transform' para os elementos selecionados.
     transform: translateY(0) scale(1);
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Marca uma etapa inicial ou final da animação.
   to {
+// Define a propriedade CSS 'transform' para os elementos selecionados.
     transform: translateY(-8px) scale(1.1);
+// Fecha o bloco de estilos que foi aberto acima.
   }
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-button{
+// Define a propriedade CSS 'border' para os elementos selecionados.
   border: 1px solid $white-normal;
+// Define a propriedade CSS 'padding' para os elementos selecionados.
   padding: 8px 24px;
+// Define a propriedade CSS 'border-radius' para os elementos selecionados.
   border-radius: 4px;
+// Define a propriedade CSS 'color' para os elementos selecionados.
   color: $white-normal;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: transparent;
+// Define a propriedade CSS 'transition' para os elementos selecionados.
   transition: background-color 0.8s;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-button:hover{
+// Define a propriedade CSS 'border' para os elementos selecionados.
   border: 1px solid $red-light;
+// Define a propriedade CSS 'background-color' para os elementos selecionados.
   background-color: $red-light;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
 .header-logo{
+// Define a propriedade CSS 'display' para os elementos selecionados.
   display: flex;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
   align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
   justify-content: center;
+// Define a propriedade CSS 'margin-top' para os elementos selecionados.
   margin-top: 14px;
+// Fecha o bloco de estilos que foi aberto acima.
 }
 
+// Inicia uma condição para adaptar o estilo a telas ou preferências específicas.
 @media screen and (max-width: 768px){
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .header-content{
+// Define a propriedade CSS 'width' para os elementos selecionados.
     width: 100%;
+// Define a propriedade CSS 'flex-direction' para os elementos selecionados.
     flex-direction: column;
+// Define a propriedade CSS 'align-items' para os elementos selecionados.
     align-items: center;
+// Define a propriedade CSS 'justify-content' para os elementos selecionados.
     justify-content: center;
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
     i{
+// Define a propriedade CSS 'margin-top' para os elementos selecionados.
       margin-top: 16px;
+// Define a propriedade CSS 'font-size' para os elementos selecionados.
       font-size: 34px;
+// Fecha o bloco de estilos que foi aberto acima.
     }
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .header-logo img{
+// Define a propriedade CSS 'width' para os elementos selecionados.
     width: 160px;
+// Define a propriedade CSS 'margin-top' para os elementos selecionados.
     margin-top: 46px;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
+// Seleciona os elementos HTML que receberão os estilos abaixo.
   .header-button{
+// Define a propriedade CSS 'display' para os elementos selecionados.
     display: none;
+// Fecha o bloco de estilos que foi aberto acima.
   }
 
+// Fecha o bloco de estilos que foi aberto acima.
 }

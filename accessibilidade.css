@@ -1,0 +1,221 @@
+/* Tema escuro padrão: define cores da página, superfícies, textos e foco. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+:root {
+/* Define a propriedade color-scheme nesta regra de estilo. */
+  color-scheme: dark;
+  /* Informa ao navegador que os controles nativos devem usar aparência escura. */
+/* Define a propriedade --page-bg nesta regra de estilo. */
+  --page-bg: #06121e;
+  /* Cor de fundo principal do modo escuro. */
+/* Define a propriedade --surface nesta regra de estilo. */
+  --surface: #ffffff;
+  /* Cor de fundo das superfícies claras, como cartões. */
+/* Define a propriedade --text nesta regra de estilo. */
+  --text: #232224;
+  /* Cor padrão para textos em superfícies claras. */
+/* Define a propriedade --text-on-dark nesta regra de estilo. */
+  --text-on-dark: #ffffff;
+  /* Cor do texto exibido sobre fundos escuros. */
+/* Define a propriedade --focus nesta regra de estilo. */
+  --focus: #ffca28;
+  /* Cor de alto contraste para o indicador de foco. */
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Substitui as cores principais quando a raiz recebe o tema claro. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+:root[data-theme="light"] {
+/* Define a propriedade color-scheme nesta regra de estilo. */
+  color-scheme: light;
+  /* Ajusta os controles nativos para a aparência clara. */
+/* Define a propriedade --page-bg nesta regra de estilo. */
+  --page-bg: #f4f6f8;
+  /* Define o fundo suave do tema claro. */
+/* Define a propriedade --surface nesta regra de estilo. */
+  --surface: #ffffff;
+  /* Mantém as superfícies brancas. */
+/* Define a propriedade --text nesta regra de estilo. */
+  --text: #18212a;
+  /* Usa texto escuro para melhorar o contraste no tema claro. */
+/* Define a propriedade --text-on-dark nesta regra de estilo. */
+  --text-on-dark: #ffffff;
+  /* Preserva texto branco em elementos escuros. */
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Aplica as cores gerais e uma transição suave entre os temas. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+body {
+/* Define a propriedade background-color nesta regra de estilo. */
+  background-color: var(--page-bg);
+/* Define a propriedade color nesta regra de estilo. */
+  color: var(--text);
+/* Define a propriedade transition nesta regra de estilo. */
+  transition: background-color .2s ease, color .2s ease;
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Atualiza o fundo e o texto da seção Sobre em ambos os temas. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.about {
+/* Define a propriedade background-color nesta regra de estilo. */
+  background-color: var(--page-bg);
+/* Define a propriedade color nesta regra de estilo. */
+  color: var(--text);
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Define fundo e texto dos serviços e dos cartões de cortes. */
+/* Continua a regra de estilo do componente explicado acima. */
+.services,
+/* Continua a regra de estilo do componente explicado acima. */
+.haircut,
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.haircut-info {
+/* Define a propriedade background-color nesta regra de estilo. */
+  background-color: var(--surface);
+/* Define a propriedade color nesta regra de estilo. */
+  color: var(--text);
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Faz o rodapé acompanhar o fundo definido para o tema atual. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.footer {
+/* Define a propriedade background-color nesta regra de estilo. */
+  background-color: var(--page-bg);
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Organiza o botão de tema e define sua aparência e área de interação. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.theme-toggle {
+/* Define a propriedade display nesta regra de estilo. */
+  display: inline-flex;
+  /* Coloca ícone e texto lado a lado. */
+/* Define a propriedade align-items nesta regra de estilo. */
+  align-items: center;
+  /* Alinha verticalmente os itens do botão. */
+/* Define a propriedade justify-content nesta regra de estilo. */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente. */
+/* Define a propriedade gap nesta regra de estilo. */
+  gap: 8px;
+  /* Cria espaço entre o ícone e o texto. */
+/* Define a propriedade padding nesta regra de estilo. */
+  padding: 9px 12px;
+  /* Aumenta a área clicável do botão. */
+/* Define a propriedade border nesta regra de estilo. */
+  border: 1px solid currentColor;
+  /* Usa a cor do texto como cor da borda. */
+/* Define a propriedade border-radius nesta regra de estilo. */
+  border-radius: 6px;
+  /* Arredonda os cantos do botão. */
+/* Define a propriedade background nesta regra de estilo. */
+  background: var(--page-bg);
+  /* Usa o fundo correspondente ao tema ativo. */
+/* Define a propriedade color nesta regra de estilo. */
+  color: var(--text-on-dark);
+  /* Define a cor do conteúdo do botão. */
+/* Define a propriedade font nesta regra de estilo. */
+  font: inherit;
+  /* Mantém a tipografia usada no restante do site. */
+/* Define a propriedade cursor nesta regra de estilo. */
+  cursor: pointer;
+  /* Indica que o botão pode ser acionado. */
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Destaca o botão de tema quando o ponteiro passa sobre ele. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.theme-toggle:hover {
+/* Define a propriedade background nesta regra de estilo. */
+  background: #d94140;
+/* Define a propriedade border-color nesta regra de estilo. */
+  border-color: #d94140;
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Ajusta o texto do botão para ficar legível no fundo do modo claro. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+:root[data-theme="light"] .theme-toggle {
+/* Define a propriedade color nesta regra de estilo. */
+  color: #18212a;
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Mantém o atalho fora da tela até receber foco pelo teclado. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.skip-link {
+/* Define a propriedade position nesta regra de estilo. */
+  position: fixed;
+/* Define a propriedade z-index nesta regra de estilo. */
+  z-index: 1000;
+/* Define a propriedade top nesta regra de estilo. */
+  top: 8px;
+/* Define a propriedade left nesta regra de estilo. */
+  left: 8px;
+/* Define a propriedade padding nesta regra de estilo. */
+  padding: 12px;
+/* Define a propriedade transform nesta regra de estilo. */
+  transform: translateY(-150%);
+/* Define a propriedade background nesta regra de estilo. */
+  background: var(--surface);
+/* Define a propriedade color nesta regra de estilo. */
+  color: var(--text);
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Exibe o atalho quando a pessoa navega até ele pelo teclado. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+.skip-link:focus {
+/* Define a propriedade transform nesta regra de estilo. */
+  transform: translateY(0);
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Desenha um contorno visível em controles que recebem foco. */
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+:focus-visible {
+/* Define a propriedade outline nesta regra de estilo. */
+  outline: 3px solid var(--focus);
+/* Define a propriedade outline-offset nesta regra de estilo. */
+  outline-offset: 3px;
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Ajusta o espaço do botão em telas menores. */
+/* Aplica regras especiais conforme largura ou preferência do dispositivo. */
+@media (max-width: 768px) {
+/* Seleciona os elementos que receberão as propriedades abaixo. */
+  .theme-toggle {
+/* Define a propriedade margin-top nesta regra de estilo. */
+    margin-top: 12px;
+/* Fecha o bloco de estilos iniciado acima. */
+  }
+
+  /* Separa o botão dos demais itens do cabeçalho. */
+/* Fecha o bloco de estilos iniciado acima. */
+}
+
+/* Respeita a preferência do sistema por menos animações e transições. */
+/* Aplica regras especiais conforme largura ou preferência do dispositivo. */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+/* Define a propriedade scroll-behavior nesta regra de estilo. */
+    scroll-behavior: auto !important;
+/* Define a propriedade animation-duration nesta regra de estilo. */
+    animation-duration: .01ms !important;
+/* Define a propriedade animation-iteration-count nesta regra de estilo. */
+    animation-iteration-count: 1 !important;
+/* Define a propriedade transition-duration nesta regra de estilo. */
+    transition-duration: .01ms !important;
+/* Fecha o bloco de estilos iniciado acima. */
+  }
+
+  /* Reduz animações de todos os elementos. */
+/* Fecha o bloco de estilos iniciado acima. */
+}

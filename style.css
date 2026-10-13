@@ -1,359 +1,1031 @@
 * {
+/* Define a propriedade CSS 'margin' para os elementos selecionados. */
   margin: 0;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 0;
+/* Define a propriedade CSS 'box-sizing' para os elementos selecionados. */
   box-sizing: border-box;
+/* Define a propriedade CSS 'outline' para os elementos selecionados. */
   outline: 0;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 header {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
   width: 100%;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-content {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: space-between;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 i {
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-icons {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
   gap: 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-icons a:hover i {
+/* Define a propriedade CSS 'animation' para os elementos selecionados. */
   animation: translateY 0.8s infinite alternate;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #d34040;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Define as etapas da animação nomeada nesta regra. */
 @keyframes translateY {
+/* Marca uma etapa inicial ou final da animação. */
   from {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
     transform: translateY(0) scale(1);
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Marca uma etapa inicial ou final da animação. */
   to {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
     transform: translateY(-8px) scale(1.1);
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-button {
+/* Define a propriedade CSS 'border' para os elementos selecionados. */
   border: 1px solid #FFF;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 8px 24px;
+/* Define a propriedade CSS 'border-radius' para os elementos selecionados. */
   border-radius: 4px;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: transparent;
+/* Define a propriedade CSS 'transition' para os elementos selecionados. */
   transition: background-color 0.8s;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-button:hover {
+/* Define a propriedade CSS 'border' para os elementos selecionados. */
   border: 1px solid #d34040;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #d34040;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .header-logo {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: center;
+/* Define a propriedade CSS 'margin-top' para os elementos selecionados. */
   margin-top: 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
 @media screen and (max-width: 768px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .header-content {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
     width: 100%;
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
     flex-direction: column;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
     align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
     justify-content: center;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .header-content i {
+/* Define a propriedade CSS 'margin-top' para os elementos selecionados. */
     margin-top: 16px;
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
     font-size: 34px;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .header-logo img {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
     width: 160px;
+/* Define a propriedade CSS 'margin-top' para os elementos selecionados. */
     margin-top: 46px;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .header-button {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
     display: none;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .container {
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
   max-width: 1440px;
+/* Define a propriedade CSS 'margin' para os elementos selecionados. */
   margin: 0 auto;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 0 8px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .bg-home {
+/* Define a propriedade CSS 'position' para os elementos selecionados. */
   position: relative;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .bg-home::before {
+/* Define a propriedade CSS 'content' para os elementos selecionados. */
   content: "";
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: block;
+/* Define a propriedade CSS 'position' para os elementos selecionados. */
   position: absolute;
+/* Define a propriedade CSS 'background-image' para os elementos selecionados. */
   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/corte1.png");
+/* Define a propriedade CSS 'left' para os elementos selecionados. */
   left: 0;
+/* Define a propriedade CSS 'top' para os elementos selecionados. */
   top: 0;
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
   width: 100%;
+/* Define a propriedade CSS 'height' para os elementos selecionados. */
   height: 100%;
+/* Define a propriedade CSS 'z-index' para os elementos selecionados. */
   z-index: -1;
+/* Define a propriedade CSS 'background-size' para os elementos selecionados. */
   background-size: cover;
+/* Define a propriedade CSS 'background-repeat' para os elementos selecionados. */
   background-repeat: no-repeat;
+/* Define a propriedade CSS 'background-position' para os elementos selecionados. */
   background-position: 50% 0;
+/* Define a propriedade CSS 'opacity' para os elementos selecionados. */
   opacity: 0.9;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .hero {
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Define a propriedade CSS 'min-height' para os elementos selecionados. */
   min-height: 80vh;
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
   flex-direction: column;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: center;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .hero h1 {
+/* Define a propriedade CSS 'text-align' para os elementos selecionados. */
   text-align: center;
+/* Define a propriedade CSS 'line-height' para os elementos selecionados. */
   line-height: 150%;
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
   max-width: 940px;
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
   font-size: 46px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .hero p {
+/* Define a propriedade CSS 'text-align' para os elementos selecionados. */
   text-align: center;
+/* Define a propriedade CSS 'margin' para os elementos selecionados. */
   margin: 14px 0;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .button-contact {
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 14px 28px;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #d94140;
+/* Define a propriedade CSS 'border' para os elementos selecionados. */
   border: 0;
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
   font-size: 18px;
+/* Define a propriedade CSS 'font-weight' para os elementos selecionados. */
   font-weight: 600;
+/* Define a propriedade CSS 'margin' para os elementos selecionados. */
   margin: 14px 0;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .button-contact:hover {
+/* Define a propriedade CSS 'animation' para os elementos selecionados. */
   animation: scaleButton 0.8s alternate infinite;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Define as etapas da animação nomeada nesta regra. */
 @keyframes scaleButton {
+/* Marca uma etapa inicial ou final da animação. */
   from {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
     transform: scale(1);
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Marca uma etapa inicial ou final da animação. */
   to {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
     transform: scale(1.07);
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
 @media screen and (max-width: 768px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .hero {
+/* Define a propriedade CSS 'min-height' para os elementos selecionados. */
     min-height: 60vh;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .hero h1 {
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
     font-size: 34px;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
     padding: 0 14px;
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
     width: 100%;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .hero p {
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
     font-size: 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
 @media screen and (max-width: 480px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .hero h1 {
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
     font-size: 24px;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about {
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #06121e;
+/* Define a propriedade CSS 'overflow' para os elementos selecionados. */
   overflow: hidden;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about-content {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: center;
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
   gap: 14px;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 34px 14px 64px 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about-content img {
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
   max-width: 570px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about-content div {
+/* Define a propriedade CSS 'flex' para os elementos selecionados. */
   flex: 1;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about-description h2 {
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
   font-size: 38px;
+/* Define a propriedade CSS 'margin-bottom' para os elementos selecionados. */
   margin-bottom: 24px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .about-description p {
+/* Define a propriedade CSS 'margin-bottom' para os elementos selecionados. */
   margin-bottom: 14px;
+/* Define a propriedade CSS 'line-height' para os elementos selecionados. */
   line-height: 150%;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
 @media screen and (max-width: 768px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .about-content {
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
     flex-direction: column;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .services {
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #FFF;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #232224;
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
   flex-direction: column;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: center;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 54px 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .services-content h2 {
+/* Define a propriedade CSS 'text-transform' para os elementos selecionados. */
   text-transform: uppercase;
+/* Define a propriedade CSS 'text-align' para os elementos selecionados. */
   text-align: center;
+/* Define a propriedade CSS 'font-size' para os elementos selecionados. */
   font-size: 38px;
+/* Define a propriedade CSS 'margin-bottom' para os elementos selecionados. */
   margin-bottom: 14px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .services-content p {
+/* Define a propriedade CSS 'line-height' para os elementos selecionados. */
   line-height: 150%;
+/* Define a propriedade CSS 'margin-bottom' para os elementos selecionados. */
   margin-bottom: 14px;
+/* Define a propriedade CSS 'text-align' para os elementos selecionados. */
   text-align: center;
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
   max-width: 780px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircuts {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: center;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
   align-items: center;
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
   gap: 16px;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 0 44px 34px 44px;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircut {
+/* Define a propriedade CSS 'flex' para os elementos selecionados. */
   flex: 1;
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
   flex-direction: column;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #FFF;
+/* Define a propriedade CSS 'border-radius' para os elementos selecionados. */
   border-radius: 8px;
+/* Define a propriedade CSS 'box-shadow' para os elementos selecionados. */
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+/* Define a propriedade CSS 'overflow' para os elementos selecionados. */
   overflow: hidden;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircut img {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
   width: 100%;
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
   max-width: 354px;
+/* Define a propriedade CSS 'transition' para os elementos selecionados. */
   transition: transform 0.2s;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircut img:hover {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
   transform: scale(1.2);
+/* Define a propriedade CSS 'z-index' para os elementos selecionados. */
   z-index: 1;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircut-info {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
   width: 100%;
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
   justify-content: space-between;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 14px;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #FFF;
+/* Define a propriedade CSS 'z-index' para os elementos selecionados. */
   z-index: 99;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .haircut-info button {
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
   color: #FFF;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #d94140;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
   padding: 4px 8px;
+/* Define a propriedade CSS 'border-radius' para os elementos selecionados. */
   border-radius: 4px;
+/* Define a propriedade CSS 'border' para os elementos selecionados. */
   border: 0;
+/* Define a propriedade CSS 'cursor' para os elementos selecionados. */
   cursor: default;
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
 
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
 @media screen and (max-width: 768px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .haircuts {
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
     flex-direction: column;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
   .haircut img {
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
     max-width: 740px;
+/* Fecha o bloco de estilos que foi aberto acima. */
   }
+/* Fecha o bloco de estilos que foi aberto acima. */
 }
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
 .footer {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
   display: flex;
+/* Define a propriedade CSS 'flex-direction' para os elementos selecionados. */
   flex-direction: column;
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
+  align-items: center;
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
+  justify-content: center;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
+  padding: 54px 0;
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
+  gap: 24px;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
+  color: #FFF;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.footer-icons {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
+  display: flex;
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
+  gap: 8px;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
+  color: #FFF;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.btn-whatsapp {
+/* Define a propriedade CSS 'position' para os elementos selecionados. */
+  position: fixed;
+/* Define a propriedade CSS 'bottom' para os elementos selecionados. */
+  bottom: 14px;
+/* Define a propriedade CSS 'right' para os elementos selecionados. */
+  right: 24px;
+/* Define a propriedade CSS 'z-index' para os elementos selecionados. */
+  z-index: 99;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.btn-whatsapp img {
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
+  max-width: 74px;
+/* Define a propriedade CSS 'transition' para os elementos selecionados. */
+  transition: transform 0.4s;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.btn-whatsapp img:hover {
+/* Define a propriedade CSS 'transform' para os elementos selecionados. */
+  transform: scale(1.1);
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.btn-whatsapp .tooltip-text {
+/* Define a propriedade CSS 'visibility' para os elementos selecionados. */
+  visibility: hidden;
+/* Define a propriedade CSS 'position' para os elementos selecionados. */
+  position: absolute;
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
+  width: 120px;
+/* Define a propriedade CSS 'top' para os elementos selecionados. */
+  top: 8px;
+/* Define a propriedade CSS 'left' para os elementos selecionados. */
+  left: -144px;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
+  padding: 6px;
+/* Define a propriedade CSS 'border-radius' para os elementos selecionados. */
+  border-radius: 8px;
+/* Define a propriedade CSS 'text-align' para os elementos selecionados. */
+  text-align: center;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
+  background-color: #232224;
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
+  color: #FFF;
+/* Define a propriedade CSS 'opacity' para os elementos selecionados. */
+  opacity: 0;
+/* Define a propriedade CSS 'transition' para os elementos selecionados. */
+  transition: opacity 0.4s;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.btn-whatsapp:hover .tooltip-text {
+/* Define a propriedade CSS 'visibility' para os elementos selecionados. */
+  visibility: visible;
+/* Define a propriedade CSS 'opacity' para os elementos selecionados. */
+  opacity: 1;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
+@media screen and (max-width: 768px) {
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+  .btn-whatsapp img {
+/* Define a propriedade CSS 'max-width' para os elementos selecionados. */
+    max-width: 64px;
+/* Fecha o bloco de estilos que foi aberto acima. */
+  }
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+body {
+/* Define a propriedade CSS 'font-family' para os elementos selecionados. */
+  font-family: "Sora", sans-serif;
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
+  width: 100%;
+/* Define a propriedade CSS 'height' para os elementos selecionados. */
+  height: 100vh;
+/* Define a propriedade CSS 'position' para os elementos selecionados. */
+  position: relative;
+/* Define a propriedade CSS 'background-color' para os elementos selecionados. */
+  background-color: #06121e;
+/* Define a propriedade CSS 'cursor' para os elementos selecionados. */
+  cursor: url("./assets/pont.png"), auto;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+button {
+/* Define a propriedade CSS 'font-family' para os elementos selecionados. */
+  font-family: "Sora", sans-serif;
+/* Define a propriedade CSS 'cursor' para os elementos selecionados. */
+  cursor: pointer;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+svg {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
+  width: 100%;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+img {
+/* Define a propriedade CSS 'width' para os elementos selecionados. */
+  width: 100%;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+a {
+/* Define a propriedade CSS 'cursor' para os elementos selecionados. */
+  cursor: pointer;
+/* Define a propriedade CSS 'text-decoration' para os elementos selecionados. */
+  text-decoration: none;
+/* Esta linha completa a regra de estilo iniciada acima. */
+}/*# sourceMappingURL=style.css.map */:root {
+/* Define a propriedade CSS 'color-scheme' para os elementos selecionados. */
+  color-scheme: dark;
+/* Define a propriedade CSS '--page-bg' para os elementos selecionados. */
+  --page-bg: #06121e;
+/* Define a propriedade CSS '--surface' para os elementos selecionados. */
+  --surface: #ffffff;
+/* Define a propriedade CSS '--text' para os elementos selecionados. */
+  --text: #232224;
+/* Define a propriedade CSS '--text-on-dark' para os elementos selecionados. */
+  --text-on-dark: #ffffff;
+/* Define a propriedade CSS '--focus' para os elementos selecionados. */
+  --focus: #ffca28;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Esta linha completa a regra de estilo iniciada acima. */
+:root[data-theme="light"] {
+/* Define a propriedade CSS 'color-scheme' para os elementos selecionados. */
+  color-scheme: light;
+/* Define a propriedade CSS '--page-bg' para os elementos selecionados. */
+  --page-bg: #f4f6f8;
+/* Define a propriedade CSS '--surface' para os elementos selecionados. */
+  --surface: #ffffff;
+/* Define a propriedade CSS '--text' para os elementos selecionados. */
+  --text: #18212a;
+/* Define a propriedade CSS '--text-on-dark' para os elementos selecionados. */
+  --text-on-dark: #ffffff;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Esta linha completa a regra de estilo iniciada acima. */
+body { background-color: var(--page-bg); color: var(--text); transition: background-color .2s ease, color .2s ease; }
+/* Esta linha completa a regra de estilo iniciada acima. */
+.about { background-color: var(--page-bg); color: var(--text); }
+/* Esta linha completa a regra de estilo iniciada acima. */
+.services, .haircut, .haircut-info { background-color: var(--surface); color: var(--text); }
+/* Esta linha completa a regra de estilo iniciada acima. */
+.footer { background-color: var(--page-bg); }
+
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.theme-toggle {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
+  padding: 9px 12px; border: 1px solid currentColor; border-radius: 6px;
+/* Define a propriedade CSS 'background' para os elementos selecionados. */
+  background: var(--page-bg); color: var(--text-on-dark); font: inherit; cursor: pointer;
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Esta linha completa a regra de estilo iniciada acima. */
+.theme-toggle:hover { background: #d94140; border-color: #d94140; }
+/* Esta linha completa a regra de estilo iniciada acima. */
+:root[data-theme="light"] .theme-toggle { color: #18212a; }
+/* Esta linha completa a regra de estilo iniciada acima. */
+.skip-link { position: fixed; z-index: 1000; top: 8px; left: 8px; padding: 12px; transform: translateY(-150%); background: var(--surface); color: var(--text); }
+/* Esta linha completa a regra de estilo iniciada acima. */
+.skip-link:focus { transform: translateY(0); }
+/* Esta linha completa a regra de estilo iniciada acima. */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
+@media (max-width: 768px) {
+/* Esta linha completa a regra de estilo iniciada acima. */
+  .theme-toggle { margin-top: 12px; }
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Tema escuro padrão: define cores da página, superfícies, textos e foco. */
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+:root {
+/* Define a propriedade CSS 'color-scheme' para os elementos selecionados. */
+  color-scheme: dark; /* Informa ao navegador que os controles nativos devem usar aparência escura. */
+/* Define a propriedade CSS '--page-bg' para os elementos selecionados. */
+  --page-bg: #06121e; /* Cor de fundo principal do modo escuro. */
+/* Define a propriedade CSS '--surface' para os elementos selecionados. */
+  --surface: #ffffff; /* Cor de fundo das superfícies claras, como cartões. */
+/* Define a propriedade CSS '--text' para os elementos selecionados. */
+  --text: #232224; /* Cor padrão para textos em superfícies claras. */
+/* Define a propriedade CSS '--text-on-dark' para os elementos selecionados. */
+  --text-on-dark: #ffffff; /* Cor do texto exibido sobre fundos escuros. */
+/* Define a propriedade CSS '--focus' para os elementos selecionados. */
+  --focus: #ffca28; /* Cor de alto contraste para o indicador de foco. */
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Substitui as cores principais quando a raiz recebe o tema claro. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+:root[data-theme="light"] {
+/* Define a propriedade CSS 'color-scheme' para os elementos selecionados. */
+  color-scheme: light; /* Ajusta os controles nativos para a aparência clara. */
+/* Define a propriedade CSS '--page-bg' para os elementos selecionados. */
+  --page-bg: #f4f6f8; /* Define o fundo suave do tema claro. */
+/* Define a propriedade CSS '--surface' para os elementos selecionados. */
+  --surface: #ffffff; /* Mantém as superfícies brancas. */
+/* Define a propriedade CSS '--text' para os elementos selecionados. */
+  --text: #18212a; /* Usa texto escuro para melhorar o contraste no tema claro. */
+/* Define a propriedade CSS '--text-on-dark' para os elementos selecionados. */
+  --text-on-dark: #ffffff; /* Preserva texto branco em elementos escuros. */
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Aplica as cores gerais e uma transição suave entre os temas. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+body { background-color: var(--page-bg); color: var(--text); transition: background-color .2s ease, color .2s ease; }
+/* Atualiza o fundo e o texto da seção Sobre em ambos os temas. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.about { background-color: var(--page-bg); color: var(--text); }
+/* Define fundo e texto dos serviços e dos cartões de cortes. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.services, .haircut, .haircut-info { background-color: var(--surface); color: var(--text); }
+/* Faz o rodapé acompanhar o fundo definido para o tema atual. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.footer { background-color: var(--page-bg); }
+
+/* Organiza o botão de tema e define sua aparência e área de interação. */
+/* Seleciona os elementos HTML que receberão os estilos abaixo. */
+.theme-toggle {
+/* Define a propriedade CSS 'display' para os elementos selecionados. */
+  display: inline-flex; /* Coloca ícone e texto lado a lado. */
+/* Define a propriedade CSS 'align-items' para os elementos selecionados. */
+  align-items: center; /* Alinha verticalmente os itens do botão. */
+/* Define a propriedade CSS 'justify-content' para os elementos selecionados. */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente. */
+/* Define a propriedade CSS 'gap' para os elementos selecionados. */
+  gap: 8px; /* Cria espaço entre o ícone e o texto. */
+/* Define a propriedade CSS 'padding' para os elementos selecionados. */
+  padding: 9px 12px; /* Aumenta a área clicável do botão. */
+/* Define a propriedade CSS 'border' para os elementos selecionados. */
+  border: 1px solid currentColor; /* Usa a cor do texto como cor da borda. */
+/* Define a propriedade CSS 'border-radius' para os elementos selecionados. */
+  border-radius: 6px; /* Arredonda os cantos do botão. */
+/* Define a propriedade CSS 'background' para os elementos selecionados. */
+  background: var(--page-bg); /* Usa o fundo correspondente ao tema ativo. */
+/* Define a propriedade CSS 'color' para os elementos selecionados. */
+  color: var(--text-on-dark); /* Define a cor do conteúdo do botão. */
+/* Define a propriedade CSS 'font' para os elementos selecionados. */
+  font: inherit; /* Mantém a tipografia usada no restante do site. */
+/* Define a propriedade CSS 'cursor' para os elementos selecionados. */
+  cursor: pointer; /* Indica que o botão pode ser acionado. */
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Destaca o botão de tema quando o ponteiro passa sobre ele. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.theme-toggle:hover { background: #d94140; border-color: #d94140; }
+/* Ajusta o texto do botão para ficar legível no fundo do modo claro. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+:root[data-theme="light"] .theme-toggle { color: #18212a; }
+/* Mantém o atalho fora da tela até receber foco pelo teclado. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.skip-link { position: fixed; z-index: 1000; top: 8px; left: 8px; padding: 12px; transform: translateY(-150%); background: var(--surface); color: var(--text); }
+/* Exibe o atalho quando a pessoa navega até ele pelo teclado. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+.skip-link:focus { transform: translateY(0); }
+/* Desenha um contorno visível em controles que recebem foco. */
+/* Esta linha completa a regra de estilo iniciada acima. */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* Ajusta o espaço do botão em telas menores. */
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
+@media (max-width: 768px) {
+/* Esta linha completa a regra de estilo iniciada acima. */
+  .theme-toggle { margin-top: 12px; } /* Separa o botão dos demais itens do cabeçalho. */
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+/* Respeita a preferência do sistema por menos animações e transições. */
+/* Inicia uma condição para adaptar o estilo a telas ou preferências específicas. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } /* Reduz animações de todos os elementos. */
+/* Fecha o bloco de estilos que foi aberto acima. */
+}
+
+/* Organiza os controles de tema e tamanho de texto no cabeçalho. */
+.accessibility-controls {
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 54px 0;
-  gap: 24px;
-  color: #FFF;
-}
-
-.footer-icons {
-  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  color: #FFF;
 }
 
-.btn-whatsapp {
-  position: fixed;
-  bottom: 14px;
-  right: 24px;
-  z-index: 99;
-}
-.btn-whatsapp img {
-  max-width: 74px;
-  transition: transform 0.4s;
-}
-.btn-whatsapp img:hover {
-  transform: scale(1.1);
-}
-
-.btn-whatsapp .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  width: 120px;
-  top: 8px;
-  left: -144px;
-  padding: 6px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #232224;
-  color: #FFF;
-  opacity: 0;
-  transition: opacity 0.4s;
+/* Mantém os botões de acessibilidade visíveis e fáceis de acionar. */
+.font-control {
+  min-width: 42px;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background: var(--page-bg);
+  color: var(--control-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.btn-whatsapp:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+/* Destaca o controle de fonte ao passar o ponteiro. */
+.font-control:hover { background: #d94140; color: #ffffff; }
+
+/* Configura cores de texto e fundo legíveis no modo escuro. */
+:root,
+:root[data-theme="dark"] {
+  --page-bg: #06121e;
+  --surface: #101d29;
+  --text: #f4f6f8;
+  --control-text: #ffffff;
+  color-scheme: dark;
 }
 
+/* Configura cores escuras para textos sobre fundos claros. */
+:root[data-theme="light"] {
+  --page-bg: #f4f6f8;
+  --surface: #ffffff;
+  --text: #18212a;
+  --control-text: #18212a;
+  color-scheme: light;
+}
+
+/* Faz o texto e o fundo das seções acompanharem o tema selecionado. */
+body,
+.about,
+.footer,
+.services,
+.haircut,
+.haircut-info {
+  background-color: var(--page-bg);
+  color: var(--text);
+}
+
+/* Mantém cartões e áreas de serviço com fundo de superfície nos dois temas. */
+.services,
+.haircut,
+.haircut-info {
+  background-color: var(--surface);
+}
+
+/* No modo claro, a chamada principal usa cores claras com texto escuro. */
+:root[data-theme="light"] .hero {
+  color: var(--text);
+}
+
+/* Mantém contraste entre o texto do botão e seu fundo vermelho. */
+.button-contact,
+.haircut-info button {
+  color: #ffffff;
+}
+
+/* Ajusta o cabeçalho em celulares para os novos controles caberem na tela. */
 @media screen and (max-width: 768px) {
-  .btn-whatsapp img {
-    max-width: 64px;
+  .accessibility-controls {
+    margin-top: 12px;
   }
 }
-body {
-  font-family: "Sora", sans-serif;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: #06121e;
-  cursor: url("./assets/pont.png"), auto;
+/* Oculta visualmente o aviso sem removê-lo da leitura por tecnologias assistivas. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Clareia a imagem e o degradê do topo no tema claro. */
+:root[data-theme="light"] .bg-home::before {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #f4f6f8), url("./assets/corte1.png");
 }
 
-button {
-  font-family: "Sora", sans-serif;
-  cursor: pointer;
+/* Adapta ícones e botões do cabeçalho ao fundo claro. */
+:root[data-theme="light"] .header-icons i,
+:root[data-theme="light"] .header-button {
+  color: var(--text);
 }
 
-svg {
-  width: 100%;
+/* Mantém texto branco nos botões vermelhos do tema claro. */
+:root[data-theme="light"] .button-contact {
+  color: #ffffff;
+}
+/* Fixa o atalho de acessibilidade por cima do conteúdo da página. */
+.accessibility-widget {
+  position: fixed;
+  z-index: 101;
+  left: calc(50% - 30px);
+  top: 50%;
+  width: 60px;
+  height: 60px;
 }
 
-img {
-  width: 100%;
+/* Desenha o botão redondo que pode ser arrastado com mouse ou toque. */
+.accessibility-trigger {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #d94140;
+  color: #ffffff;
+  font-size: 27px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
 }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+/* Indica visualmente que o botão está sendo arrastado. */
+.accessibility-trigger:active { cursor: grabbing; }
+
+/* Mostra o painel de preferências acima do botão flutuante. */
+.accessibility-panel {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  width: 230px;
+  padding: 16px;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+}
+
+/* Respeita o atributo hidden que controla a abertura do painel. */
+.accessibility-panel[hidden] { display: none; }
+
+/* Formata o título do conjunto de opções. */
+.accessibility-panel-title { margin: 0; font-size: 1rem; font-weight: 600; }
+
+/* Alinha os três controles de tamanho da fonte. */
+.font-controls { display: flex; justify-content: space-between; gap: 8px; }
+
+/* Mantém os botões de fonte iguais e confortáveis para toque. */
+.font-control { flex: 1; min-height: 44px; background: var(--page-bg); color: var(--control-text); }
+
+/* Explica que o botão redondo pode ser movido. */
+.drag-hint { font-size: 0.75rem; text-align: center; }
+
+/* Mantém o botão e seu painel dentro da tela em dispositivos estreitos. */
+@media (max-width: 480px) {
+  .accessibility-panel { right: -8px; width: min(230px, calc(100vw - 24px)); }
+}
