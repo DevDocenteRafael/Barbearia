@@ -173,7 +173,7 @@ i {
 /* Define a propriedade CSS 'position' para os elementos selecionados. */
   position: absolute;
 /* Define a propriedade CSS 'background-image' para os elementos selecionados. */
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/corte1.png");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/corte1.png");
 /* Define a propriedade CSS 'left' para os elementos selecionados. */
   left: 0;
 /* Define a propriedade CSS 'top' para os elementos selecionados. */
@@ -644,7 +644,7 @@ body {
 /* Define a propriedade CSS 'background-color' para os elementos selecionados. */
   background-color: #06121e;
 /* Define a propriedade CSS 'cursor' para os elementos selecionados. */
-  cursor: url("./assets/pont.png"), auto;
+  cursor: url("../assets/pont.png"), auto;
 /* Fecha o bloco de estilos que foi aberto acima. */
 }
 
@@ -949,7 +949,7 @@ body,
 }
 /* Clareia a imagem e o degradê do topo no tema claro. */
 :root[data-theme="light"] .bg-home::before {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #f4f6f8), url("./assets/corte1.png");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #f4f6f8), url("../assets/corte1.png");
 }
 
 /* Adapta ícones e botões do cabeçalho ao fundo claro. */

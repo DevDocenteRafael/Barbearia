@@ -1,44 +1,56 @@
-﻿# Dev Barber
+# Dev Barber
 
 Página institucional de uma barbearia, criada como projeto acadêmico para a Semana de Ciência e Tecnologia. O site apresenta os serviços, horário de funcionamento, localização e opções de contato para agendamento.
 
 ## Acessibilidade
 
-- Alternância entre modo escuro e modo claro, com preferência salva no navegador.
-- Link para pular diretamente ao conteúdo principal.
-- Controles de tema identificados para leitores de tela e estados anunciados via `aria-pressed`.
-- Suporte à preferência do sistema por movimento reduzido nas animações.
-- Layout adaptável para telas menores e foco de teclado visível.
+- Botão flutuante arrastável com controles de tema claro e escuro.
+- Controles para diminuir, restaurar e aumentar o tamanho do texto.
+- Preferências e posição do botão salvas no navegador.
+- Atalho para pular ao conteúdo principal, navegação por teclado e foco visível.
+- Suporte à preferência do sistema por movimento reduzido.
 
 ## Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome e AOS (bibliotecas carregadas por CDN)
+- HTML5, CSS3, SCSS e JavaScript.
+- Font Awesome e AOS, carregados por CDN.
 
 ## Como executar
 
-1. Baixe ou clone este repositório.
-2. Abra `index.html` em um navegador. Para uma experiência mais consistente, use uma extensão de servidor local, como Live Server no Visual Studio Code.
+Abra `index.html` em um navegador. Para desenvolvimento, use um servidor local, como a extensão Live Server no Visual Studio Code. Não é necessário instalar dependências para visualizar o site.
 
-Não é necessário instalar dependências ou compilar o projeto.
+## Organização dos arquivos
 
-## Estrutura
+Os arquivos foram separados por responsabilidade para facilitar a manutenção e o aprendizado:
+
+- `index.html` fica na raiz porque é a página de entrada que o navegador carrega primeiro.
+- `README.md` fica na raiz para que as instruções do projeto sejam fáceis de encontrar.
+- `assets/` reúne imagens, logotipos e ícones usados pela página.
+- `styles/` reúne os arquivos de estilo. `style.css` é carregado pelo navegador; `style.scss` é o arquivo-fonte SCSS; `partials/` guarda trechos SCSS reutilizados; `accessibilidade.css` contém regras de acessibilidade; e `style.css.map` conecta o CSS gerado aos arquivos SCSS de origem nas ferramentas de desenvolvimento.
+- `scripts/` contém `script.js`, responsável pela alternância de tema, ajuste do tamanho da fonte e movimentação do botão flutuante.
+
+O HTML aponta para os estilos em `styles/` e para o JavaScript em `scripts/`. Os caminhos das imagens continuam apontando para `assets/`. Ao mover ou renomear arquivos, atualize também os caminhos correspondentes no HTML, CSS ou JavaScript.
 
 ```text
-├── assets/       # Imagens, logotipo e ícones
-├── partials/     # Arquivos SCSS de apoio
-├── index.html    # Estrutura da página
-├── style.css     # Estilos e temas
-└── script.js     # Alternância de tema e animações
+├── assets/                   # Imagens, logotipos e ícones
+├── scripts/
+│   └── script.js             # Tema, fonte e botão de acessibilidade
+├── styles/
+│   ├── partials/             # Partes SCSS reutilizadas
+│   ├── accessibilidade.css   # Regras de acessibilidade
+│   ├── style.css             # Estilos carregados pelo navegador
+│   ├── style.css.map         # Mapeamento entre CSS e SCSS
+│   └── style.scss            # Arquivo principal SCSS
+├── index.html                # Página principal
+└── README.md                 # Documentação do projeto
 ```
 
 ## Personalização
 
-- Edite textos, preços, links de contato e endereço no `index.html`.
-- Ajuste cores e estilos no `style.css`.
-- Substitua as imagens dentro de `assets/` mantendo os caminhos correspondentes no HTML.
+- Edite textos, preços, contato e mapa em `index.html`.
+- Ajuste os estilos em `styles/style.scss` e nos arquivos de `styles/partials/`.
+- O navegador usa `styles/style.css`. Depois de editar o SCSS, regenere o CSS para que as alterações apareçam no site.
+- Substitua imagens dentro de `assets/` mantendo os nomes ou atualizando os caminhos correspondentes.
 
 ## Demonstração
 
