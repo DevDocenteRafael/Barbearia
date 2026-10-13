@@ -47,25 +47,30 @@ const accessibilityPanel = document.querySelector('#accessibility-panel');
 let dragState = null;
 let wasDragged = false;
 
-// Restaura a posição salva ou coloca o atalho ao lado de Agendar horário.
+// Restaura a posição salva ou coloca o atalho ao lado do botão do WhatsApp.
 const savedWidgetPosition = JSON.parse(localStorage.getItem('dev-barber-accessibility-position-v2') || 'null');
-const scheduleButton = document.querySelector('.header-button');
+const whatsappButton = document.querySelector('.btn-whatsapp');
+
+// Coloca o atalho de acessibilidade na mesma linha do botão do WhatsApp.
+function positionWidgetBesideWhatsapp() {
+  const whatsappBounds = whatsappButton.getBoundingClientRect();
+  const widgetLeft = Math.max(8, whatsappBounds.left - accessibilityWidget.offsetWidth - 8);
+  const widgetTop = Math.max(8, Math.min(
+    whatsappBounds.top + (whatsappBounds.height - accessibilityWidget.offsetHeight) / 2,
+    window.innerHeight - accessibilityWidget.offsetHeight - 8
+  ));
+  accessibilityWidget.style.left = `${widgetLeft}px`;
+  accessibilityWidget.style.top = `${widgetTop}px`;
+}
+
 if (savedWidgetPosition) {
   // Reaplica a posição definida anteriormente pela pessoa visitante.
-  accessibilityWidget.style.left = `${savedWidgetPosition.left}px`;
-  accessibilityWidget.style.top = `${savedWidgetPosition.top}px`;
-} else if (scheduleButton && scheduleButton.getBoundingClientRect().width > 0) {
-  // Lê a posição do botão de agendamento quando ele está visível.
-  const scheduleBounds = scheduleButton.getBoundingClientRect();
-  // Coloca o botÃ£o redondo Ã  direita do agendamento, com espaÃ§amento semelhante ao da referÃªncia.
-  const initialLeft = Math.min(scheduleBounds.right + 28, window.innerWidth - accessibilityWidget.offsetWidth - 8);
-  const initialTop = Math.max(8, Math.min(scheduleBounds.top + (scheduleBounds.height - accessibilityWidget.offsetHeight) / 2, window.innerHeight - accessibilityWidget.offsetHeight - 8));
-  accessibilityWidget.style.left = `${initialLeft}px`;
-  accessibilityWidget.style.top = `${initialTop}px`;
+  const maxLeft = window.innerWidth - accessibilityWidget.offsetWidth;
+  const maxTop = window.innerHeight - accessibilityWidget.offsetHeight;
+  accessibilityWidget.style.left = `${Math.max(0, Math.min(savedWidgetPosition.left, maxLeft))}px`;
+  accessibilityWidget.style.top = `${Math.max(0, Math.min(savedWidgetPosition.top, maxTop))}px`;
 } else {
-  // Em telas sem o botão de agendamento, posiciona o atalho próximo ao centro.
-  accessibilityWidget.style.left = `${Math.max(8, window.innerWidth / 2 - accessibilityWidget.offsetWidth / 2)}px`;
-  accessibilityWidget.style.top = `${Math.max(8, window.innerHeight / 2 - accessibilityWidget.offsetHeight / 2)}px`;
+  positionWidgetBesideWhatsapp();
 }
 
 // Posiciona o painel para que ele abra dentro da janela do navegador.
@@ -80,6 +85,21 @@ function placeAccessibilityPanel() {
 
 // Ajusta a posição do painel ao carregar a posição salva.
 placeAccessibilityPanel();
+
+// Mantém o atalho visível e ao lado do WhatsApp após mudanças no tamanho da tela.
+window.addEventListener('resize', () => {
+  if (savedWidgetPosition) {
+    const bounds = accessibilityWidget.getBoundingClientRect();
+    const left = Math.max(0, Math.min(bounds.left, window.innerWidth - bounds.width));
+    const top = Math.max(0, Math.min(bounds.top, window.innerHeight - bounds.height));
+    accessibilityWidget.style.left = `${left}px`;
+    accessibilityWidget.style.top = `${top}px`;
+  } else {
+    positionWidgetBesideWhatsapp();
+  }
+  placeAccessibilityPanel();
+});
+
 // Abre ou fecha o painel quando o botão redondo é clicado.
 accessibilityTrigger.addEventListener('click', () => {
   // Ignora o clique sintético que o navegador gera ao terminar um arraste.
