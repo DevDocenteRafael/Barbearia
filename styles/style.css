@@ -954,6 +954,7 @@ body,
 
 /* Adapta ícones e botões do cabeçalho ao fundo claro. */
 :root[data-theme="light"] .header-icons i,
+:root[data-theme="light"] .footer-icons i,
 :root[data-theme="light"] .header-button {
   color: var(--text);
 }
